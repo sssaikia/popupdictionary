@@ -9,6 +9,7 @@ import android.*;
 import android.content.pm.*;
 import android.view.View;
 import android.widget.Button;
+import android.content.*;
 
 public class MainActivity extends Activity 
 {	TextView t;
@@ -51,6 +52,17 @@ public class MainActivity extends Activity
 					  "Those word will be displayed here,"
 					  + "and this error will be gone. \n Or import from a file.");
 		}
+		final EditText srch = findViewById(R.id.srchTxt);	
+		(findViewById(R.id.srch))
+			.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v)
+				{
+					startActivity(new Intent(MainActivity.this,
+					Main2Activity.class).putExtra("srchtxt",
+					srch.getText().toString()));
+                }
+            });
 
 		(findViewById(R.id.export))
 			.setOnClickListener(new View.OnClickListener() {

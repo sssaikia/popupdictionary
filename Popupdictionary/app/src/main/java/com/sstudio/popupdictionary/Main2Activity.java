@@ -18,12 +18,19 @@ public class Main2Activity extends Activity
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
-    {
+    {	CharSequence txt= null;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main2);
-		CharSequence txt = getIntent()
-			.getCharSequenceExtra(Intent.EXTRA_PROCESS_TEXT);
-
+		Intent i= getIntent();
+		if(i.getCharSequenceExtra
+		(Intent.EXTRA_PROCESS_TEXT)!=null){
+		 txt=i.getCharSequenceExtra
+		 (Intent.EXTRA_PROCESS_TEXT);
+		}
+	
+		if(i.getStringExtra("srchtxt")!=null){
+			txt = i.getStringExtra("srchtxt");
+		}
 		web = findViewById(R.id.web);
 		fl = findViewById(R.id.fl);
 		pb = findViewById(R.id.pb);
