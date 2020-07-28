@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	android:layout_gravity="center_vertical|center_horizontal">
+
+	<TextView
+		android:text="@string/hello_world"
+		android:id="@+id/mainTextView"
+		android:padding="10dp"
+		android:textIsSelectable="true"
+		android:textSize="18sp"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="left"
+		android:textStyle="bold"/>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Export"
+		android:id="@+id/export"
+		android:layout_alignBottom="@id/mainTextView"
+		android:layout_centerVertical="true"
+		android:gravity="center|center_vertical|center_horizontal"
+		android:layout_margin="10dp"
+		android:background="#FAFAFA"/>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Import"
+		android:layout_alignBottom="@id/mainTextView"
+		android:layout_alignParentEnd="true"
+		android:id="@+id/imprt"
+		android:layout_margin="10dp"
+		android:background="#FAFAFA"/>
+
+</RelativeLayout>
+
