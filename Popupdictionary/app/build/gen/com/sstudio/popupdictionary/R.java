@@ -12,17 +12,23 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
-        public static final int shape=0x7f020001;
+        public static final int pill=0x7f020001;
+        public static final int shape=0x7f020002;
     }
     public static final class id {
+        public static final int bing=0x7f060009;
+        public static final int dict=0x7f06000b;
         public static final int export=0x7f060003;
         public static final int fl=0x7f060005;
+        public static final int google=0x7f060008;
         public static final int imprt=0x7f060004;
         public static final int mainTextView=0x7f060002;
         public static final int pb=0x7f060007;
         public static final int srch=0x7f060001;
         public static final int srchTxt=0x7f060000;
+        public static final int urban=0x7f06000c;
         public static final int web=0x7f060006;
+        public static final int wiki=0x7f06000a;
     }
     public static final class layout {
         public static final int main=0x7f030000;

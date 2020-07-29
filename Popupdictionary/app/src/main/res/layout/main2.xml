@@ -1,10 +1,11 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical">
-	
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
 	<FrameLayout
-		xmlns:android="http://schemas.android.com/apk/res/android"
 		android:layout_width="300dp"
 		android:layout_height="400dp"
 		android:gravity="center"
@@ -22,6 +23,72 @@
 			android:layout_gravity="center"/>
 
 	</FrameLayout>
-	
-	
+
+	<HorizontalScrollView
+		android:layout_width="300dp"
+		android:layout_height="wrap_content"
+		android:layout_margin="1dp"
+		android:padding="1dp">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:padding="1dp">
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Google"
+				android:id="@+id/google"
+				android:background="@drawable/pill"
+				android:padding="3dp"
+				android:layout_margin="8dp"
+				android:textStyle="bold"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Bing"
+				android:id="@+id/bing"
+				android:background="@drawable/pill"
+				android:padding="3dp"
+				android:layout_margin="8dp"
+				android:textStyle="bold"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Wikipedia"
+				android:id="@+id/wiki"
+				android:background="@drawable/pill"
+				android:padding="3dp"
+				android:layout_margin="8dp"
+				android:textStyle="bold"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="dictionary.com"
+				android:id="@+id/dict"
+				android:background="@drawable/pill"
+				android:padding="3dp"
+				android:layout_margin="8dp"
+				android:textStyle="bold"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Urban dictionary"
+				android:id="@+id/urban"
+				android:background="@drawable/pill"
+				android:padding="3dp"
+				android:layout_margin="8dp"
+				android:textStyle="bold"/>
+
+		</LinearLayout>
+
+	</HorizontalScrollView>
+
 </LinearLayout>
+
