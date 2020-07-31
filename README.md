@@ -1,4 +1,5 @@
 # popupdictionary
+(Project migrated to gitlab)
 
 
 ## What is it?
